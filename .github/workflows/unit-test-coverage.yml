@@ -36,7 +36,7 @@ jobs:
       - run: pnpm test:unit:coverage
 
       - run:
-          echo "PATHS=$(find ./packages -type f -path '*/**/coverage/lcov.info' |  paste -sd ',' -)" >>
+          echo "PATHS=$(find ./packages -type f -path '*/coverage/lcov.info' |  paste -sd ',' -)" >>
           $GITHUB_OUTPUT
         id: coverage-reports
 
