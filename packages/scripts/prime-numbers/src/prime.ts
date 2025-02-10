@@ -19,3 +19,11 @@ export function getPrimes(n: number) {
     }
     return primes
 }
+
+export function getNextPrime(n: number) {
+    let i = n + 1;
+    while (!isPrime(i)) {
+        i++;
+    }
+    return i;
+}
