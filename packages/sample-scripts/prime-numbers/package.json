@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prime": "tsx src/prime"
+    "prime": "tsx src/prime",
+    "test": "pnpm run test:unit",
+    "test:unit:coverage": "vitest run --coverage",
+    "test:unit": "vitest run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "tsx": "^4.19.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
   }
 }

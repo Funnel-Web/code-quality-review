@@ -1,4 +1,4 @@
-function isPrime(n: number): boolean {
+export function isPrime(n: number): boolean {
     if (n < 2) {
         return false;
     }
@@ -10,14 +10,16 @@ function isPrime(n: number): boolean {
     return true;
 }
 
-function getPrimes(n: number) {
+export function getPrimes(n: number) {
     const primes: number[] = [1];
     for (let i = 2; i <= n; i++) {
         if (isPrime(i)) {
             primes.push(i);
         }
     }
-    console.log(`primes from 1 to ${n} are: ${primes.join(',')}`);
+    return primes
 }
 
-getPrimes(1000)
+const limit = 1000;
+const result = getPrimes(limit);
+console.log(`primes from 1 to ${limit} are: ${result.join(',')}`);
