@@ -6,15 +6,16 @@ settings:
 
 importers:
 
-  .: {}
-
-  packages/samlple-site:
+  .:
     dependencies:
       astro:
         specifier: ^5.2.5
         version: 5.2.5(typescript@5.7.3)
+      vitest:
+        specifier: ^3.0.5
+        version: 3.0.5(tsx@4.19.2)
 
-  packages/sample-scripts/prime-numbers:
+  packages/scripts/prime-numbers:
     dependencies:
       tsx:
         specifier: ^4.19.2
@@ -22,6 +23,15 @@ importers:
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
+      vitest:
+        specifier: ^3.0.5
+        version: 3.0.5(tsx@4.19.2)
+
+  packages/site:
+    dependencies:
+      astro:
+        specifier: ^5.2.5
+        version: 5.2.5(typescript@5.7.3)
       vitest:
         specifier: ^3.0.5
         version: 3.0.5(tsx@4.19.2)
