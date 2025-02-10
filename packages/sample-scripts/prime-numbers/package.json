@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prime": "tsx src/prime",
+    "prime": "tsx src/index",
     "test": "pnpm run test:unit",
     "test:unit:coverage": "vitest run --coverage",
     "test:unit": "vitest run"
