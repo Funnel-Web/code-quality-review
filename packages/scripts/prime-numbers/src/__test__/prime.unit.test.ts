@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isPrime, getPrimes, getNextPrime } from '../prime';
+import { isPrime, getPrimes, getNextPrime, getPrevPrime } from '../prime';
 
 describe('Prime number test', () => {
     it('should return true for prime numbers and false for non prime', () => {
@@ -21,6 +21,11 @@ describe('Prime number test', () => {
     it('should return the next prime number', () => {
         const nextPrime = getNextPrime(13);
         expect(nextPrime).toBe(17);
+    });
+
+    it('should return the previous prime number', () => {
+        const prevPrime = getPrevPrime(13);
+        expect(prevPrime).toBe(11);
     });
 
 });

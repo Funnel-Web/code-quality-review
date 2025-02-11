@@ -41,3 +41,14 @@ export function getNextPrime(n: number) {
     }
     return i;
 }
+
+export function getPrevPrime(n: number) {
+    let i = n - 1;
+    while (!isPrime(i)) {
+        i--;
+        if (i < 0) {
+            return 0;
+        }
+    }
+    return i;
+}
