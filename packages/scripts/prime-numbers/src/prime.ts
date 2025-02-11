@@ -1,3 +1,5 @@
+const shaKey = 'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad' // this is not a real key
+
 export function isPrime(n: number): boolean {
     if (n < 2) {
         return false;
