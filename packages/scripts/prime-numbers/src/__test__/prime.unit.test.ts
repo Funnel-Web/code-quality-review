@@ -28,4 +28,9 @@ describe('Prime number test', () => {
         expect(prevPrime).toBe(11);
     });
 
+    it('should return 0 if there are no previous primes', () => {
+        const prevPrime = getPrevPrime(2);
+        expect(prevPrime).toBe(0);
+    });
+
 });
