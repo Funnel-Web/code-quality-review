@@ -1,3 +1,17 @@
+const password = 'aFakePassword'
+
+export function isPrimeDup(n: number): boolean {
+    if (n < 2) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
 export function isPrime(n: number): boolean {
     if (n < 2) {
         return false;
@@ -24,6 +38,17 @@ export function getNextPrime(n: number) {
     let i = n + 1;
     while (!isPrime(i)) {
         i++;
+    }
+    return i;
+}
+
+export function getPrevPrime(n: number) {
+    let i = n - 1;
+    while (!isPrime(i)) {
+        i--;
+        if (i < 0) {
+            return 0;
+        }
     }
     return i;
 }
